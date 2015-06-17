@@ -10,7 +10,8 @@
 (setq backup-directory-alist '(("." . "~/.saves")))
 
 ;; Load path
-(add-to-list 'load-path (expand-file-name "lisp"))
+(let ((default-directory user-emacs-directory))
+  (add-to-list 'load-path (expand-file-name "lisp")))
 
 ;; Init melpa
 (when (>= emacs-major-version 24)
