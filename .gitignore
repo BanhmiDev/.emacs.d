@@ -1,0 +1,24 @@
+.emacs-theme
+.mc-lists.el
+.thesaurus.cache
+/tmp/savehist
+ac-comphist.dat
+auto-save-list
+bookmarks
+history
+ido.last
+/local
+modes-init/init-marmalade.el
+modes-init/init-paradox.el
+newsticker/feeds/Emacs Wiki/data
+newsticker/feeds/Hacker News/data
+places
+projectile-bookmarks.eld
+recentf
+server
+server/**
+smex-items
+tramp
+url/*
+var
+/.persistent-scratch
