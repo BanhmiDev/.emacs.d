@@ -30,22 +30,12 @@
    t)
   (package-initialize))
 
-;; Init auto-completion
-(require 'auto-complete)
-(global-auto-complete-mode t)
-
-;; Init appearance
-(require 'appearance)
-
-;; Init key bindings
-(require 'key-bindings)
-
-;; Snippets
-(require 'yasnippet)
-(setq yas-snippet-dirs '("~/.emacs.d/snippets/custom" ;; Custom snippets
-                         "~/.emacs.d/snippets/yasnippet-snippets" ;; borrowed snippets (yasnippet-snippets collection)
-                         ))
-(yas-global-mode 1)
+;; Init
+(require 'init-appearance)
+(require 'init-auto-complete)
+(require 'init-yasnippet)
+(require 'init-neotree)
+(require 'init-key-bindings)
 
 ;; Emacs server
 (require 'server)

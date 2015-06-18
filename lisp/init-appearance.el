@@ -20,4 +20,4 @@
 ;; Font settings
 (set-frame-font "Inconsolata 10")
 
-(provide 'appearance)
+(provide 'init-appearance)

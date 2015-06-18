@@ -1,5 +1,4 @@
 ;; Neotree
-(require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
 (global-set-key (kbd "C-<up>") 'windmove-up)
@@ -11,4 +10,4 @@
 (global-unset-key (kbd "C-x m"))
 (global-set-key (kbd "C-x m") 'eshell)
 
-(provide 'key-bindings)
+(provide 'init-key-bindings)
