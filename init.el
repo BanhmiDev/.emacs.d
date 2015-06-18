@@ -1,7 +1,15 @@
+;; custom emacs config
+;; https://github.com/gimu/.emacs.d
+
 ;; Interface modification
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+
+;; Indentation
+(setq-default indent-tabs-mode nil) ;; Disable tabs
+(define-key text-mode-map (kbd "<tab>") 'tab-to-tab-stop)
+(setq-default c-basic-offset 4)
 
 ;; Disable splash screen
 (setq inhibit-startup-message t)
@@ -31,6 +39,13 @@
 
 ;; Init key bindings
 (require 'key-bindings)
+
+;; Snippets
+(require 'yasnippet)
+(setq yas-snippet-dirs '("~/.emacs.d/snippets/custom" ;; Custom snippets
+                         "~/.emacs.d/snippets/yasnippet-snippets" ;; borrowed snippets (yasnippet-snippets collection)
+                         ))
+(yas-global-mode 1)
 
 ;; Emacs server
 (require 'server)

@@ -6,7 +6,7 @@
 ;; Highlight current line
 (global-hl-line-mode 1)
 
-;; theme
+;; Theme
 (load-theme 'monokai t)
 
 ;; Highlight matching parentheses when the point is on them.
@@ -16,5 +16,8 @@
   (setq frame-title-format '(buffer-file-name "%f" ("%b")))
   (tooltip-mode -1)
   (blink-cursor-mode -1))
+
+;; Font settings
+(set-frame-font "Inconsolata 10")
 
 (provide 'appearance)
