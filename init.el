@@ -11,6 +11,9 @@
 (define-key text-mode-map (kbd "<tab>") 'tab-to-tab-stop)
 (setq-default c-basic-offset 4)
 
+;; Haskell indentation
+(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
+
 ;; Automatic brackets
 (electric-pair-mode 1)
 
