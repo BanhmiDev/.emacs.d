@@ -33,12 +33,14 @@
    t)
   (package-initialize))
 
-;; Init
 (require 'init-appearance)
 (require 'init-auto-complete)
 (require 'init-yasnippet)
+(require 'init-mmm-mode)
 (require 'init-neotree)
 (require 'init-key-bindings)
+
+(require 'init-python-mode)
 
 ;; Emacs server
 (require 'server)

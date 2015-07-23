@@ -7,7 +7,7 @@
 (global-hl-line-mode 1)
 
 ;; Theme
-(load-theme 'monokai t)
+(load-theme 'zenburn t)
 
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)

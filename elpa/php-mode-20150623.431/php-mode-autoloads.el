@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "php-mode" "php-mode.el" (21906 56291 653330
-;;;;;;  355000))
+;;;### (autoloads nil "php-mode" "php-mode.el" (21907 49884 390606
+;;;;;;  901000))
 ;;; Generated autoloads from php-mode.el
 
 (let ((loads (get 'php 'custom-loads))) (if (member '"php-mode" loads) nil (put 'php 'custom-loads (cons '"php-mode" loads))))
@@ -24,11 +24,6 @@ Major mode for editing PHP code.
 \(fn)" t nil)
 
 (dolist (pattern '("\\.php[s345t]?\\'" "\\.phtml\\'" "Amkfile" "\\.amk$")) (add-to-list 'auto-mode-alist `(,pattern . php-mode) t))
-
-;;;***
-
-;;;### (autoloads nil nil ("php-mode-pkg.el") (21906 56291 751862
-;;;;;;  300000))
 
 ;;;***
 
