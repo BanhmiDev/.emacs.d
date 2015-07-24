@@ -1,5 +1,5 @@
-;; custom emacs config
-;; https://github.com/gimu/.emacs.d
+;;; custom emacs config
+;;; https://github.com/gimu/.emacs.d
 
 ;; Interface modification
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
@@ -36,14 +36,15 @@
    t)
   (package-initialize))
 
-(require 'init-appearance)
+;; Load configurations
+(require 'init-appearance) 
 (require 'init-auto-complete)
 (require 'init-yasnippet)
-(require 'init-mmm-mode)
 (require 'init-neotree)
-(require 'init-key-bindings)
-
+(require 'init-markdown)
 (require 'init-python-mode)
+(require 'init-mmm-mode)
+(require 'init-key-bindings)
 
 ;; Emacs server
 (require 'server)
