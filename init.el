@@ -41,6 +41,7 @@
 (require 'init-auto-complete)
 (require 'init-yasnippet)
 (require 'init-neotree)
+(require 'init-git)
 (require 'init-markdown)
 (require 'init-python-mode)
 (require 'init-mmm-mode)
