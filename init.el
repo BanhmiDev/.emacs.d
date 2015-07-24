@@ -42,9 +42,12 @@
 (require 'init-yasnippet)
 (require 'init-neotree)
 (require 'init-git)
+
+(require 'init-org-mode)
 (require 'init-markdown)
 (require 'init-python-mode)
 (require 'init-mmm-mode)
+
 (require 'init-key-bindings)
 
 ;; Emacs server

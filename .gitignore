@@ -22,4 +22,3 @@ tramp
 url/*
 var
 /.persistent-scratch
-/elpa
