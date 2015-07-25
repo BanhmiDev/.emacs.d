@@ -46,6 +46,7 @@
 (require 'init-markdown)
 (require 'init-sh-mode)
 (require 'init-c-mode)
+(require 'init-c++-mode)
 (require 'init-python-mode)
 (require 'init-mmm-mode)
 
