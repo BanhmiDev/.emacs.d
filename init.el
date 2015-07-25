@@ -9,7 +9,6 @@
 ;; Indentation
 (setq-default indent-tabs-mode nil) ;; Disable tabs
 (define-key text-mode-map (kbd "<tab>") 'tab-to-tab-stop)
-(setq-default c-basic-offset 4)
 
 ;; Haskell indentation
 (add-hook 'haskell-mode-hook 'haskell-indentation-mode)
@@ -45,6 +44,8 @@
 
 (require 'init-org-mode)
 (require 'init-markdown)
+(require 'init-sh-mode)
+(require 'init-c-mode)
 (require 'init-python-mode)
 (require 'init-mmm-mode)
 

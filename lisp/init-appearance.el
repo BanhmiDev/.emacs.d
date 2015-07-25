@@ -13,7 +13,7 @@
 (show-paren-mode 1)
 
 (when window-system
-  (setq frame-title-format '(buffer-file-name "%f" ("%b")))
+  (setq frame-title-format '("%b (%m) %e")) ;; Buffer name, mode, memory message
   (tooltip-mode -1)
   (blink-cursor-mode -1))
 
